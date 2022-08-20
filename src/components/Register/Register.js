@@ -30,7 +30,7 @@ class Register extends React.Component{
         .then(user=>{
             if(user)
             {
-                this.props.loaduser(user);
+                this.props.loadUser(user);
                 this.props.onRoutChange('home');
             }
         })
@@ -46,15 +46,15 @@ class Register extends React.Component{
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
                         <legend className="f1 fw6 ph0 mh0">Register</legend>
                         <div className="mt3">
-                            <label className="db fw6 lh-copy f6" For="name">Name</label>
+                            <label className="db fw6 lh-copy f6" HTMLFor="name">Name</label>
                             <input onChange={this.onRegisterName} className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="name"  id="name"/>
                         </div>
                         <div className="mt3">
-                            <label className="db fw6 lh-copy f6" For="email-address">Email</label>
+                            <label className="db fw6 lh-copy f6" HTMLFor="email-address">Email</label>
                             <input onChange={this.onRegisterEmail} className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email" name="email-address"  id="email-address"/>
                         </div>
                         <div className="mv3">
-                            <label className="db fw6 lh-copy f6" For="password">Password</label>
+                            <label className="db fw6 lh-copy f6" HTMLFor="password">Password</label>
                             <input onChange={this.onRegisterPassword} className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="password"/>
                         </div>
                         </fieldset>
